@@ -5,7 +5,9 @@
   (coast/html5
     [:head
      [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
-     (coast/include-css "/css/app.css")]
+     [:title "Quotefreak"]
+     (coast/include-css "/css/app.css")
+     (coast/include-css "/css/bootstrap.min.css")]
     [:body
      body
      (coast/include-js "/js/app.js")]))
@@ -23,3 +25,6 @@
     [:body
      "Something went wrong!"
      (coast/include-js "/js/app.js")]))
+
+(defn header []
+  [:h1 "This is the header"])
